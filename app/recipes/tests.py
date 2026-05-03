@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.test import TestCase
 from django.urls import reverse
 
@@ -95,3 +96,11 @@ class RecipeViewsTests(TestCase):
 
         self.assertIn("container_hostname", context)
         self.assertTrue(context["container_hostname"])
+
+
+class DemoSettingsTests(TestCase):
+    def test_demo_settings_allow_any_host(self):
+        self.assertIn("*", settings.ALLOWED_HOSTS)
+
+    def test_demo_settings_disable_csrf_middleware(self):
+        self.assertNotIn("django.middleware.csrf.CsrfViewMiddleware", settings.MIDDLEWARE)

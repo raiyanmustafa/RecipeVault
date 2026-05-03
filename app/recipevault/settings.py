@@ -6,11 +6,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.environ.get("SECRET_KEY", "recipevault-development-key")
 DEBUG = os.environ.get("DEBUG", "1") == "1"
-ALLOWED_HOSTS = [
-    host.strip()
-    for host in os.environ.get("ALLOWED_HOSTS", "localhost,127.0.0.1,0.0.0.0").split(",")
-    if host.strip()
-]
+
+# Demo-only settings: this workshop app intentionally avoids host/CSRF friction.
+ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ["http://*", "https://*"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -26,11 +25,12 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+X_FRAME_OPTIONS = "ALLOWALL"
 
 ROOT_URLCONF = "recipevault.urls"
 
