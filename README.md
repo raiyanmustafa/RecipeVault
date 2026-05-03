@@ -40,6 +40,20 @@ docker run --rm --env-file .env -p 8000:8000 recipevault
 
 The Dockerfile shows the setup as image-build layers: install dependencies, run migrations, create `admin / admin`, load sample recipes, and then start Django with `CMD`.
 
+## Run With Docker Compose
+
+```bash
+docker compose up --build
+```
+
+Compose reads demo environment values from `.env.example`.
+
+Stop it:
+
+```bash
+docker compose down
+```
+
 ## Run Tests
 
 ```bash
