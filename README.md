@@ -2,7 +2,7 @@
 
 A deliberately small Django recipe app for the Docker in Practice workshop.
 
-This first version is Django-only. It gives the workshop a tiny real application with code, dependencies, a database, uploaded files, and browser traffic. Docker files are intentionally not included yet.
+This version gives the workshop a tiny real application with code, dependencies, a database, uploaded files, browser traffic, and a very small Dockerfile for the first container demo.
 
 This app uses permissive demo settings: all hosts are allowed, CSRF middleware is disabled, and framing is allowed. Keep those settings for local workshop demonstrations only.
 
@@ -16,6 +16,29 @@ python3 -m venv .venv
 ```
 
 Open `http://127.0.0.1:8000`.
+
+## Run With Docker
+
+Build the image:
+
+```bash
+docker build -t recipevault .
+```
+
+Run it with default demo settings:
+
+```bash
+docker run --rm -p 8000:8000 recipevault
+```
+
+Run it with environment variables from `.env`:
+
+```bash
+cp .env.example .env
+docker run --rm --env-file .env -p 8000:8000 recipevault
+```
+
+The Dockerfile shows the setup as image-build layers: install dependencies, run migrations, create `admin / admin`, load sample recipes, and then start Django with `CMD`.
 
 ## Run Tests
 

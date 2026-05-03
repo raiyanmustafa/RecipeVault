@@ -8,8 +8,16 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "recipevault-development-key")
 DEBUG = os.environ.get("DEBUG", "1") == "1"
 
 # Demo-only settings: this workshop app intentionally avoids host/CSRF friction.
-ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ["http://*", "https://*"]
+ALLOWED_HOSTS = [
+    host.strip()
+    for host in os.environ.get("ALLOWED_HOSTS", "*").split(",")
+    if host.strip()
+]
+CSRF_TRUSTED_ORIGINS = [
+    origin.strip()
+    for origin in os.environ.get("CSRF_TRUSTED_ORIGINS", "http://*,https://*").split(",")
+    if origin.strip()
+]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
