@@ -1,5 +1,5 @@
 from django.conf import settings
-from django.test import TestCase
+from django.test import Client, TestCase
 from django.urls import reverse
 
 from .models import Recipe
@@ -104,3 +104,15 @@ class DemoSettingsTests(TestCase):
 
     def test_demo_settings_disable_csrf_middleware(self):
         self.assertNotIn("django.middleware.csrf.CsrfViewMiddleware", settings.MIDDLEWARE)
+
+    def test_admin_login_ignores_csrf_origin_checks_for_dev_tunnels(self):
+        csrf_client = Client(enforce_csrf_checks=True)
+
+        response = csrf_client.post(
+            "/admin/login/",
+            {"username": "admin", "password": "admin", "next": "/admin/"},
+            HTTP_ORIGIN="https://localhost:8000",
+            secure=True,
+        )
+
+        self.assertNotEqual(response.status_code, 403)
