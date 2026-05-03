@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.contrib import admin
 from django.test import Client, TestCase
 from django.urls import reverse
 
@@ -116,3 +117,8 @@ class DemoSettingsTests(TestCase):
         )
 
         self.assertNotEqual(response.status_code, 403)
+
+
+class AdminRegistrationTests(TestCase):
+    def test_recipe_model_is_registered_in_admin(self):
+        self.assertIn(Recipe, admin.site._registry)
