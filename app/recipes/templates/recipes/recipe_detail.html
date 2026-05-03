@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}{{ recipe.title }} - RecipeVault{% endblock %}
+
+{% block content %}
+  <article class="recipe-detail">
+    <div class="detail-actions">
+      <a href="{% url 'recipes:edit' recipe.pk %}">Edit</a>
+      <a href="{% url 'recipes:delete' recipe.pk %}">Delete</a>
+    </div>
+
+    <h1>{{ recipe.title }}</h1>
+
+    {% if recipe.photo %}
+      <img class="detail-photo" src="{{ recipe.photo.url }}" alt="{{ recipe.title }}">
+    {% endif %}
+
+    {% if recipe.description %}
+      <p class="description">{{ recipe.description }}</p>
+    {% endif %}
+
+    <h2>Ingredients</h2>
+    <pre>{{ recipe.ingredients }}</pre>
+
+    {% if recipe.notes %}
+      <h2>Notes</h2>
+      <pre>{{ recipe.notes }}</pre>
+    {% endif %}
+  </article>
+{% endblock %}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Garlic Butter Pasta</title>
+  <desc id="desc">A bowl of pasta ribbons with butter, garlic, and pepper.</desc>
+  <rect width="900" height="600" fill="#f5efe7"/>
+  <circle cx="450" cy="330" r="230" fill="#ffffff" stroke="#d8c7b1" stroke-width="12"/>
+  <g fill="none" stroke="#e7bf65" stroke-width="28" stroke-linecap="round">
+    <path d="M300 290c80-60 175 70 290 0"/>
+    <path d="M290 350c100-75 210 78 330 5"/>
+    <path d="M335 405c65-47 155 48 230 0"/>
+    <path d="M350 250c75 40 160 40 245-5"/>
+  </g>
+  <g fill="#f5dd83">
+    <rect x="510" y="230" width="58" height="45" rx="8" transform="rotate(16 510 230)"/>
+    <rect x="330" y="385" width="52" height="40" rx="8" transform="rotate(-12 330 385)"/>
+  </g>
+  <g fill="#564032">
+    <circle cx="405" cy="290" r="6"/>
+    <circle cx="565" cy="360" r="6"/>
+    <circle cx="465" cy="425" r="5"/>
+  </g>
+  <g fill="#ede1cc">
+    <ellipse cx="640" cy="255" rx="26" ry="18" transform="rotate(-20 640 255)"/>
+    <ellipse cx="620" cy="295" rx="24" ry="16" transform="rotate(18 620 295)"/>
+  </g>
+</svg>

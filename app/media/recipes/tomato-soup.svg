@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Tomato Soup</title>
+  <desc id="desc">A bowl of red tomato soup with cream and basil.</desc>
+  <rect width="900" height="600" fill="#f3eadf"/>
+  <circle cx="450" cy="330" r="230" fill="#fdfaf4" stroke="#d6c7b8" stroke-width="14"/>
+  <circle cx="450" cy="330" r="170" fill="#c83d2d"/>
+  <path d="M320 320c70-55 170-55 250 0" fill="none" stroke="#f7bcae" stroke-width="20" stroke-linecap="round"/>
+  <path d="M560 180c38-50 96-42 130-7c-60 26-107 28-130 7z" fill="#3d8c4a"/>
+  <path d="M585 190c20-38 66-48 102-28c-39 31-76 40-102 28z" fill="#2f743a"/>
+  <circle cx="375" cy="270" r="18" fill="#e8664f"/>
+  <circle cx="525" cy="405" r="16" fill="#a42d24"/>
+  <rect x="170" y="480" width="560" height="28" rx="14" fill="#d9c3a8"/>
+</svg>

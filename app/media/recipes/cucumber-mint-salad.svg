@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Cucumber Mint Salad</title>
+  <desc id="desc">A bowl of cucumber slices with yogurt and mint.</desc>
+  <rect width="900" height="600" fill="#eef3e7"/>
+  <circle cx="450" cy="330" r="230" fill="#ffffff" stroke="#cbd8bd" stroke-width="12"/>
+  <circle cx="450" cy="330" r="170" fill="#f9fff5"/>
+  <g>
+    <ellipse cx="365" cy="270" rx="62" ry="34" fill="#8ccf7e" transform="rotate(-20 365 270)"/>
+    <ellipse cx="365" cy="270" rx="42" ry="22" fill="#dff6d3" transform="rotate(-20 365 270)"/>
+    <ellipse cx="520" cy="285" rx="64" ry="35" fill="#78bd70" transform="rotate(18 520 285)"/>
+    <ellipse cx="520" cy="285" rx="43" ry="23" fill="#dff6d3" transform="rotate(18 520 285)"/>
+    <ellipse cx="430" cy="410" rx="68" ry="34" fill="#76b96c" transform="rotate(8 430 410)"/>
+    <ellipse cx="430" cy="410" rx="45" ry="22" fill="#dff6d3" transform="rotate(8 430 410)"/>
+  </g>
+  <g fill="#2f8a4f">
+    <ellipse cx="585" cy="385" rx="12" ry="34" transform="rotate(55 585 385)"/>
+    <ellipse cx="610" cy="355" rx="12" ry="32" transform="rotate(-30 610 355)"/>
+    <ellipse cx="315" cy="370" rx="10" ry="28" transform="rotate(48 315 370)"/>
+  </g>
+  <circle cx="455" cy="335" r="58" fill="#ffffff" opacity="0.7"/>
+</svg>

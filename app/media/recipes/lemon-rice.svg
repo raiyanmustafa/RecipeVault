@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Lemon Rice</title>
+  <desc id="desc">A bowl of yellow lemon rice with peanuts and lemon slices.</desc>
+  <rect width="900" height="600" fill="#f6efe3"/>
+  <circle cx="450" cy="330" r="220" fill="#ffffff" stroke="#d8c9b0" stroke-width="12"/>
+  <circle cx="450" cy="330" r="165" fill="#f4c542"/>
+  <g fill="#fff3a8">
+    <ellipse cx="350" cy="260" rx="55" ry="22" transform="rotate(-22 350 260)"/>
+    <ellipse cx="490" cy="250" rx="62" ry="22" transform="rotate(18 490 250)"/>
+    <ellipse cx="560" cy="365" rx="54" ry="20" transform="rotate(-12 560 365)"/>
+    <ellipse cx="390" cy="405" rx="64" ry="23" transform="rotate(15 390 405)"/>
+  </g>
+  <g fill="#8a5a28">
+    <circle cx="330" cy="340" r="15"/>
+    <circle cx="395" cy="295" r="13"/>
+    <circle cx="510" cy="390" r="14"/>
+    <circle cx="585" cy="310" r="13"/>
+  </g>
+  <g fill="#3f7d3b">
+    <ellipse cx="420" cy="210" rx="14" ry="38" transform="rotate(50 420 210)"/>
+    <ellipse cx="570" cy="420" rx="14" ry="36" transform="rotate(35 570 420)"/>
+  </g>
+  <path d="M675 145a70 70 0 1 1-140 0a70 70 0 0 1 140 0z" fill="#f8d94a"/>
+  <path d="M605 75v140M535 145h140M556 96l98 98M654 96l-98 98" stroke="#fff6a4" stroke-width="8"/>
+</svg>

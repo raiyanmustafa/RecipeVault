@@ -1,0 +1,67 @@
+[
+  {
+    "model": "recipes.recipe",
+    "pk": 1,
+    "fields": {
+      "title": "Lemon Rice",
+      "description": "A bright, quick rice dish with lemon, herbs, and a little crunch.",
+      "ingredients": "2 cups cooked rice\n1 lemon, juiced\n1 tablespoon oil\n1 teaspoon mustard seeds\n8 curry leaves\n1/4 cup roasted peanuts\nSalt to taste",
+      "notes": "Use day-old rice if you have it. It keeps the grains separate.",
+      "photo": "recipes/lemon-rice.svg",
+      "created_at": "2026-05-03T00:00:00Z",
+      "updated_at": "2026-05-03T00:00:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 2,
+    "fields": {
+      "title": "Tomato Soup",
+      "description": "A simple tomato soup for showing basic recipe records in the demo app.",
+      "ingredients": "6 ripe tomatoes\n1 small onion\n2 cloves garlic\n2 cups vegetable stock\n1 tablespoon olive oil\nSalt and pepper",
+      "notes": "Blend until smooth and serve with toast.",
+      "photo": "recipes/tomato-soup.svg",
+      "created_at": "2026-05-03T00:01:00Z",
+      "updated_at": "2026-05-03T00:01:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 3,
+    "fields": {
+      "title": "Masala Omelette",
+      "description": "A fast breakfast omelette with onion, chili, cilantro, and warm spices.",
+      "ingredients": "2 eggs\n2 tablespoons chopped onion\n1 green chili, chopped\n1 tablespoon cilantro\n1 pinch turmeric\nSalt to taste",
+      "notes": "Cook on medium heat so the eggs stay tender.",
+      "photo": "recipes/masala-omelette.svg",
+      "created_at": "2026-05-03T00:02:00Z",
+      "updated_at": "2026-05-03T00:02:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 4,
+    "fields": {
+      "title": "Garlic Butter Pasta",
+      "description": "A tiny pantry pasta recipe that works well as demo content.",
+      "ingredients": "200g pasta\n2 tablespoons butter\n3 cloves garlic, minced\n1/4 cup pasta water\n2 tablespoons grated cheese\nBlack pepper",
+      "notes": "Save pasta water before draining; it helps make the sauce glossy.",
+      "photo": "recipes/garlic-butter-pasta.svg",
+      "created_at": "2026-05-03T00:03:00Z",
+      "updated_at": "2026-05-03T00:03:00Z"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 5,
+    "fields": {
+      "title": "Cucumber Mint Salad",
+      "description": "A cool, crisp salad for balancing richer dishes.",
+      "ingredients": "1 cucumber, sliced\n1/2 cup yogurt\n1 tablespoon chopped mint\n1 teaspoon lemon juice\nSalt to taste",
+      "notes": "Chill for 10 minutes before serving.",
+      "photo": "recipes/cucumber-mint-salad.svg",
+      "created_at": "2026-05-03T00:04:00Z",
+      "updated_at": "2026-05-03T00:04:00Z"
+    }
+  }
+]

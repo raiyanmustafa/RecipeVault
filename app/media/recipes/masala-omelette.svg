@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Masala Omelette</title>
+  <desc id="desc">A folded golden omelette with onion, chili, and herbs.</desc>
+  <rect width="900" height="600" fill="#f2ece2"/>
+  <ellipse cx="450" cy="340" rx="285" ry="180" fill="#ffffff" stroke="#d4c3ae" stroke-width="12"/>
+  <path d="M235 350c55-120 190-175 345-130c105 31 143 93 94 158c-64 84-248 111-387 65c-50-16-69-47-52-93z" fill="#e7a72e"/>
+  <path d="M275 348c82 28 180 31 305 7" fill="none" stroke="#bd7627" stroke-width="14" stroke-linecap="round"/>
+  <g fill="#bd3a2e">
+    <circle cx="390" cy="270" r="12"/>
+    <circle cx="520" cy="300" r="10"/>
+    <circle cx="445" cy="395" r="11"/>
+  </g>
+  <g fill="#ffffff">
+    <rect x="335" y="310" width="28" height="18" rx="6"/>
+    <rect x="585" y="340" width="30" height="18" rx="6"/>
+  </g>
+  <g fill="#2f7d43">
+    <ellipse cx="470" cy="245" rx="10" ry="28" transform="rotate(62 470 245)"/>
+    <ellipse cx="570" cy="388" rx="9" ry="25" transform="rotate(35 570 388)"/>
+    <ellipse cx="370" cy="420" rx="8" ry="24" transform="rotate(80 370 420)"/>
+  </g>
+</svg>

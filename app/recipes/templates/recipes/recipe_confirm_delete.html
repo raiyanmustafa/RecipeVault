@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Delete Recipe - RecipeVault{% endblock %}
+
+{% block content %}
+  <section class="form-shell">
+    <h1>Delete {{ recipe.title }}?</h1>
+    <p>This removes the recipe record from RecipeVault.</p>
+    <form method="post">
+      {% csrf_token %}
+      <button type="submit">Delete recipe</button>
+      <a href="{{ recipe.get_absolute_url }}">Cancel</a>
+    </form>
+  </section>
+{% endblock %}

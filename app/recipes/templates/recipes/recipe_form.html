@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Save Recipe - RecipeVault{% endblock %}
+
+{% block content %}
+  <section class="form-shell">
+    <h1>{% if object %}Edit recipe{% else %}Add recipe{% endif %}</h1>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Save recipe</button>
+    </form>
+  </section>
+{% endblock %}
